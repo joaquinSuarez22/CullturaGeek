@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: $fontLato;
+
+  &::selection {
+    background-color: $gray4 ;
+    color: $yellow6;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $black2;
+  color: white;
+}
+
+span{
+  color: $yellow6;
+}
