@@ -194,7 +194,7 @@
       </div>
     </section>
 
-    <!--top 10 RECOMENDACION PELICULAS-->
+    <!--top 10 RECOMENDACIONES PELICULAS-->
     <section id="recompelis">
       <div class="recompelis__titulo">
         <h6>TOP 10 recomendaciones de <span>PELICULAS</span> semanales</h6>
@@ -235,6 +235,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
+
     </section>
 
     <!--RECOMENDACION CANCIONES-->
@@ -430,14 +431,33 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 0,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+    // when window width is >= 768px/tablet
+
+   
+
+    991: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1500: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+  }
   });
+
 </script>
+
+
+
+
 
 <!--box icons-->
 

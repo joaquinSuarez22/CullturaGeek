@@ -352,6 +352,42 @@ MOBILE ==> 576px
      object-fit: cover;
 }
 
+@media screen and (max-width: 991px) {
+  #recompelis .recom__slider img {
+    height: 465px;
+  }
+  #recomcanciones .recom__slider img {
+    height: 465px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #recompelis .recom__slider {
+    margin: 3rem;
+  }
+  #recompelis .recom__slider img {
+    height: 400px;
+  }
+  #recomcanciones .recom__slider {
+    margin: 3rem;
+  }
+  #recomcanciones .recom__slider img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #recompelis .recom__slider {
+    margin: 1rem;
+  }
+  #recompelis .recom__slider img {
+    height: 270px;
+  }
+  #recomcanciones .recom__slider {
+    margin: 1rem;
+  }
+  #recomcanciones .recom__slider img {
+    height: 270px;
+  }
+}
 footer {
   width: 100%;
   padding: 50px 0px;

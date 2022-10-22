@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
 
-  a{
+  a {
     background-color: $black2;
   }
 }
@@ -32,4 +32,59 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+@media screen and (max-width: 991px) {
+  #recompelis .recom__slider {
+
+    img {
+      height: 465px;
+    }
+  }
+
+  #recomcanciones .recom__slider {
+
+    img {
+      height: 465px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  #recompelis .recom__slider {
+    margin: 3rem;
+
+    img {
+      height: 400px;
+    }
+  }
+
+  #recomcanciones .recom__slider {
+    margin: 3rem;
+
+    img {
+      height: 400px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  #recompelis .recom__slider {
+    margin: 1rem;
+
+    img {
+      height: 270px;
+    }
+  }
+
+  #recomcanciones .recom__slider {
+    margin: 1rem;
+
+    img {
+      height: 270px;
+    }
+  }
 }
