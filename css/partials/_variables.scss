@@ -24,3 +24,32 @@ $yellow5: #FFD100;
 $yellow6: #FFCA1E;
 
 $red: #E03A3E;
+
+
+
+/*BOTON UP*/
+
+  .btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+    z-index: 20;
+
+  }
+  
+  .btn-scrolltop-on {
+    transform: translateY(0);
+  }
+
+  @media screen and (max-width: 400px) {
+ 
+    .btn-scrolltop {
+        display: none;
+    }
+
+
+  }
