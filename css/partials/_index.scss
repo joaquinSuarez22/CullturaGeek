@@ -17,13 +17,13 @@ header {
   background-color: $black2;
 
   .nav_iconredes {
-    padding-left: 4rem;
+    padding-left: 1rem;
     display: flex;
     gap: 1rem;
   }
 
   .navbar-brand {
-    padding-right: 4rem;
+    padding-right: 1rem;
 
     span {
       padding: 1rem;
@@ -34,6 +34,15 @@ header {
     border-radius: 50%;
   }
 }
+
+
+@media screen and (max-width: 400px) {
+  
+  header {
+    position: absolute;
+    }
+}
+
 
 @media screen and (max-width: 991px) {
   header {
@@ -371,3 +380,5 @@ MOBILE ==> 576px
     }
   }
 }
+
+

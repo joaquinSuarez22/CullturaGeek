@@ -68,12 +68,12 @@ header .header__a:hover {
   transition: 1s;
 }
 header .nav_iconredes {
-  padding-left: 4rem;
+  padding-left: 1rem;
   display: flex;
   gap: 1rem;
 }
 header .navbar-brand {
-  padding-right: 4rem;
+  padding-right: 1rem;
 }
 header .navbar-brand span {
   padding: 1rem;
@@ -82,6 +82,11 @@ header img {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 400px) {
+  header {
+    position: absolute;
+  }
+}
 @media screen and (max-width: 991px) {
   header {
     font-size: 25px;
@@ -435,6 +440,7 @@ footer {
 
 .box__footer .logo img {
   width: 180px;
+  border-radius: 50%;
 }
 
 .box__footer .terms {
@@ -590,6 +596,10 @@ ul li {
   margin-top: 10rem;
 }
 
+img {
+  border-radius: 5px;
+}
+
 .blog__titulo {
   display: flex;
   justify-content: center;
@@ -599,6 +609,49 @@ ul li {
   display: flex;
   text-align: center;
   font-size: 5rem;
+}
+
+.bloginfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bloginfo .bloginfo__personaimg {
+  border-radius: 100%;
+  height: 30px;
+  margin-right: 10px;
+}
+.bloginfo .bloginfo__persona,
+.bloginfo .bloginfo__fecha,
+.bloginfo .bloginfo__en {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  text-align: center;
+}
+.bloginfo .bloginfo__persona p,
+.bloginfo .bloginfo__fecha p,
+.bloginfo .bloginfo__en p {
+  color: grey;
+  padding-right: 5px;
+}
+.bloginfo .bloginfo__persona a,
+.bloginfo .bloginfo__fecha a,
+.bloginfo .bloginfo__en a {
+  text-decoration: none;
+}
+@media screen and (max-width: 400px) {
+  .bloginfo .bloginfo__en {
+    display: none;
+  }
+}
+
+.bloginfo__persona a {
+  color: #FFD520;
+}
+
+.bloginfo__en a {
+  color: #515151;
 }
 
 .blog__imgprincial {
@@ -631,6 +684,9 @@ ul li {
   padding-left: 25%;
   padding-right: 25%;
 }
+.blog__maintexto p {
+  font-size: 20px;
+}
 
 .blog__imgsecundario {
   display: flex;
@@ -661,6 +717,9 @@ ul li {
   flex-direction: column;
   padding-left: 25%;
   padding-right: 25%;
+}
+.blog__secondarytexto p {
+  font-size: 20px;
 }
 
 /*media queries*/
@@ -712,5 +771,12 @@ ul li {
   .blog__secondarytexto {
     padding-left: 5%;
     padding-right: 5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bloginfo {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }/*# sourceMappingURL=estilo.css.map */
