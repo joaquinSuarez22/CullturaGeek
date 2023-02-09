@@ -1,5 +1,4 @@
 /*HEADER*/
-
 header {
   font-size: 20px;
   position: fixed;
@@ -35,14 +34,11 @@ header {
   }
 }
 
-
 @media screen and (max-width: 400px) {
-  
   header {
     position: absolute;
-    }
+  }
 }
-
 
 @media screen and (max-width: 991px) {
   header {
@@ -80,6 +76,27 @@ header {
   img:hover {
     transform: scale(1.1);
   }
+}
+
+.hero_contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.hero__texto {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 1.3rem;
+  background-color: black;
+}
+
+.hero_img_text_mobile{
+  display: none;
 }
 
 /*Las NOTICIAS mas destacadas*/
@@ -236,6 +253,12 @@ header {
   #hero .hero__img img {
     height: 300px;
   }
+
+  //hero
+
+  .hero__texto {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1640px) {
@@ -371,6 +394,23 @@ MOBILE ==> 576px
     margin-block: 0.5rem;
     margin-inline: 0.5rem;
   }
+
+  .hero__texto {
+    display: none;
+  }
+
+  .hero_img_text_mobile{
+   display: flex;
+   border-radius: 5px;
+   padding: 1px;
+   font-size: 20px;
+   background-color: black;
+text-align: center;
+margin-left: 5rem;
+margin-right: 5rem;
+
+  }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -380,5 +420,3 @@ MOBILE ==> 576px
     }
   }
 }
-
-

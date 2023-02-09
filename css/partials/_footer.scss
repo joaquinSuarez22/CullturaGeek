@@ -17,6 +17,10 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 40px;
+
+  h6{
+    font-size: 30px;
+  }
 }
 
 .box__footer .logo img {

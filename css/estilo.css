@@ -119,6 +119,27 @@ header img {
   transform: scale(1.1);
 }
 
+.hero_contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.hero__texto {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 1px;
+  font-size: 1.3rem;
+  background-color: black;
+}
+
+.hero_img_text_mobile {
+  display: none;
+}
+
 /*Las NOTICIAS mas destacadas*/
 #noticias img {
   border-radius: 20px;
@@ -239,6 +260,9 @@ header img {
   #hero .hero__img img {
     height: 300px;
   }
+  .hero__texto {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1640px) {
   header .navbar-brand {
@@ -349,6 +373,19 @@ MOBILE ==> 576px
     margin-block: 0.5rem;
     margin-inline: 0.5rem;
   }
+  .hero__texto {
+    display: none;
+  }
+  .hero_img_text_mobile {
+    display: flex;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 20px;
+    background-color: black;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 @media screen and (max-width: 390px) {
   #curiosidades .curiosidades .curiosidades__img #curiosidades img {
@@ -436,6 +473,9 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 40px;
+}
+.box__footer h6 {
+  font-size: 30px;
 }
 
 .box__footer .logo img {
@@ -608,7 +648,7 @@ img {
 .blog__titulo h1 {
   display: flex;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .bloginfo {
