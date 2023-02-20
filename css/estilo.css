@@ -256,6 +256,7 @@ header img {
     margin-right: 50%;
   }
 }
+/*hero*/
 @media screen and (max-width: 1730px) {
   #hero .hero__img img {
     height: 300px;
@@ -270,6 +271,15 @@ header img {
     padding-right: 0rem;
     gap: 1rem;
   }
+  /*  header span {
+     display: none;
+   }
+
+   .nav_iconredes a {
+     display: none;
+   } */
+}
+@media screen and (max-width: 1115px) {
   header span {
     display: none;
   }
@@ -496,8 +506,7 @@ footer {
   color: #FFFFFF;
   font-weight: 700;
   text-decoration: underline;
-  -webkit-text-decoration-color: #FFEE32;
-          text-decoration-color: #FFEE32;
+  text-decoration-color: #FFEE32;
 }
 
 .box__footer a {

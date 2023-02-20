@@ -249,6 +249,9 @@ header {
   }
 }
 
+
+/*hero*/
+
 @media screen and (max-width: 1730px) {
   #hero .hero__img img {
     height: 300px;
@@ -268,14 +271,26 @@ header {
     gap: 1rem;
   }
 
-  header span {
+ /*  header span {
     display: none;
   }
 
   .nav_iconredes a {
     display: none;
-  }
+  } */
 }
+
+@media screen and (max-width: 1115px) {
+
+   header span {
+    display: none;
+  }
+
+  .nav_iconredes a {
+    display: none;
+  } 
+}
+
 
 @media screen and (max-width: 1400px) {
   #recomcanciones .recomcanciones__titulo h6 {
