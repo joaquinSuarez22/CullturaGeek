@@ -34,23 +34,19 @@
   object-fit: cover;
 }
 
-
 @media screen and (max-width: 991px) {
   #recompelis .recom__slider {
-
     img {
       height: 465px;
     }
   }
 
   #recomcanciones .recom__slider {
-
     img {
       height: 465px;
     }
   }
 }
-
 
 @media screen and (max-width: 750px) {
   #recompelis .recom__slider {
@@ -69,7 +65,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 500px) {
   #recompelis .recom__slider {

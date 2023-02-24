@@ -1,55 +1,48 @@
-
 /*FUENTE*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 $fontLato: "Lato", sans-serif;
 
 /*PALETA DE COLORES*/
-$white1: #FFFFFF;
+$white1: #ffffff;
 
 $black1: #000000;
 $black2: #202020;
 
-$gray1: #D6D6D6;
-$gray2: #B5B5B5;
+$gray1: #d6d6d6;
+$gray2: #b5b5b5;
 $gray3: #848383;
 $gray4: #515151;
 $gray5: #333533;
 
-$yellow1: #FFEE32;
-$yellow2: #FFEB54;
-$yellow3: #FFE14F;
-$yellow4: #FFD520;
-$yellow5: #FFD100;
-$yellow6: #FFCA1E;
+$yellow1: #ffee32;
+$yellow2: #ffeb54;
+$yellow3: #ffe14f;
+$yellow4: #ffd520;
+$yellow5: #ffd100;
+$yellow6: #ffca1e;
 
-$red: #E03A3E;
-
-
+$red: #e03a3e;
 
 /*BOTON UP*/
 
+.btn-scrolltop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: 0.3s;
+  z-index: 20;
+}
+
+.btn-scrolltop-on {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 400px) {
   .btn-scrolltop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 100%;
-    cursor: pointer;
-    transform: translateY(100px);
-    transition: 0.3s;
-    z-index: 20;
-
+    display: none;
   }
-  
-  .btn-scrolltop-on {
-    transform: translateY(0);
-  }
-
-  @media screen and (max-width: 400px) {
- 
-    .btn-scrolltop {
-        display: none;
-    }
-
-
-  }
+}

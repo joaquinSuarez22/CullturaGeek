@@ -6,7 +6,7 @@
   font-family: $fontLato;
 
   &::selection {
-    background-color: $gray4 ;
+    background-color: $gray4;
     color: $yellow6;
   }
 }
@@ -15,11 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: $black2;
   color: white;
 }
 
-span{
+span {
   color: $yellow6;
 }

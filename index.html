@@ -1,420 +1,506 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--HEAD-->
+  <!--HEAD-->
+  <head>
+    <title>CullturaGeek</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="CullturaGeek" />
+    <meta name="copyright" content="CullturaGeek" />
+    <meta name="language" content="spanish" />
+    <meta name="description" content="Home - CullturaGeek" />
+    <meta name="keywords" content="CullturaGeek cine instagram" />
+    <link rel="shortcut icon" href="./images/Screenshot_1.png" title="icon" />
 
-<head>
-  <title>CullturaGeek</title>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="CullturaGeek" />
-  <meta name="copyright" content="CullturaGeek" />
-  <meta name="language" content="spanish" />
-  <meta name="description" content="index - CullturaGeek" />
-  <meta name="keywords" content="CullturaGeek cine musica instagram" />
-  <link rel="shortcut icon" href="./images/Screenshot_1.png" title="icon" />
+    <!------------------------------------------------------------------------------>
 
-  <!------------------------------------------------------------------------------>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!--swiper js-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
-  <!--swiper js-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!--box icons-->
 
-  <!--box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilo.css" />
 
-  <link rel="stylesheet" href="css/estilo.css" />
+    <!--google ads-->
 
-  <!--google ads-->
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9314627624641940"
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9314627624641940"
     crossorigin="anonymous"></script>
+ -->
+  </head>
 
-</head>
+  <!--BODY-->
 
-<!--BODY-->
+  <body>
+    <!--HEADER-->
+    <header class="fw-bold">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/Screenshot_1.png"
+              alt="logo"
+              width="60"
+              height="60"
+              class="d-inline-block align-text-center"
+              title="logo CullturaGeek"
+            />
+            <span style="color: white">CULLTURAGEEK</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
+          <div
+            class="navbar__div collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active header__a"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__a text-white"
+                  href="./pages/blog.html"
+                  >Novedades</a
+                >
+              </li>
 
-  <!--HEADER-->
-  <header class="fw-bold">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/Screenshot_1.png" alt="logo" width="60" height="60" class="d-inline-block align-text-center"
-            title="logo CullturaGeek" />
-          <span style="color: white;">CULLTURAGEEK</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+              <li class="nav-item">
+                <a class="nav-link header__a text-white" href="#recompelis">
+                  Top semanales
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header__a text-white" href="#curiosidades">
+                  Curiosidades
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="navbar__div collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active header__a" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link header__a text-white" href="./pages/blog.html">Novedades</a>
-            </li>
+          <div class="nav_iconredes">
+            <a
+              href="https://api.whatsapp.com/send?phone=5491162132903"
+              target="_blank"
+            >
+              <box-icon
+                size="lg"
+                name="whatsapp"
+                type="logo"
+                animation="tada-hover"
+                color="#ffffff"
+              ></box-icon>
+            </a>
 
-            <li class="nav-item">
-              <a class="nav-link header__a text-white" href="#recompelis">
-                Top semanales
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link header__a text-white" href="#curiosidades">
-                Curiosidades
-              </a>
-            </li>
-          </ul>
+            <a href="https://www.instagram.com/cullturageek" target="_blank">
+              <box-icon
+                size="lg"
+                name="instagram"
+                type="logo"
+                animation="tada-hover"
+                color="#ffffff"
+              ></box-icon>
+            </a>
+
+            <a href="mailto:ezeesosaa5@gmail.com" target="_blank">
+              <box-icon
+                size="lg"
+                name="gmail"
+                type="logo"
+                animation="tada-hover"
+                color="#ffffff"
+              ></box-icon>
+            </a>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="nav_iconredes">
-          <a href="https://api.whatsapp.com/send?phone=5491162132903" target="_blank">
-            <box-icon size="lg" name="whatsapp" type="logo" animation="tada-hover" color="#ffffff"></box-icon>
-          </a>
-
-          <a href="https://www.instagram.com/cullturageek" target="_blank">
-            <box-icon size="lg" name="instagram" type="logo" animation="tada-hover" color="#ffffff"></box-icon>
-          </a>
-
-          <a href="mailto:ezeesosaa5@gmail.com" target="_blank">
-            <box-icon size="lg" name="gmail" type="logo" animation="tada-hover" color="#ffffff"></box-icon>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!--MAIN-->
-  <main>
-
-    <!--HERO-->
-    <section id="hero">
-      <div class="hero__img">
-        <!--imagen-->
-        <div class="hero_contenedor">
-          <a class="hero_contenedor_img" href="./pages/avatar-nota.html"><img src="./images/avatar/avatar1.jpg"
-              alt="img CullturaGeek" /></a>
-          <div class="hero__texto">
+    <!--MAIN-->
+    <main>
+      <!--HERO-->
+      <section id="hero">
+        <div class="hero__img">
+          <!--imagen-->
+          <div class="hero_contenedor">
+            <a class="hero_contenedor_img" href="./pages/avatar-nota.html"
+              ><img src="./images/avatar/avatar1.jpg" alt="img CullturaGeek"
+            /></a>
+            <div class="hero__texto">
+              <p>
+                Todo lo que necesitas saber sobre AVATAR, trama, horario,
+                curiosidades y mas!
+              </p>
+            </div>
+          </div>
+          <div class="hero_img_text_mobile">
             <p>
-              Todo lo que necesitas saber sobre AVATAR, trama, horario, curiosidades y mas!
+              Todo lo que necesitas saber sobre AVATAR, trama, horario,
+              curiosidades y mas!
+            </p>
+          </div>
+          <div class="hero_contenedor">
+            <a class="hero_contenedor_img" href="./pages/avatar-nota.html"
+              ><img src="./images/avatar/avatar1.jpg" alt="img CullturaGeek"
+            /></a>
+            <div class="hero__texto">
+              <p>
+                Todo lo que necesitas saber sobre AVATAR, trama, horario,
+                curiosidades y mas!
+              </p>
+            </div>
+          </div>
+          <div class="hero_img_text_mobile">
+            <p>
+              Todo lo que necesitas saber sobre AVATAR, trama, horario,
+              curiosidades y mas!
             </p>
           </div>
         </div>
-        <div class="hero_img_text_mobile">
-          <p>
-            Todo lo que necesitas saber sobre AVATAR, trama, horario, curiosidades y mas!
-          </p>
+      </section>
+
+      <!--Las NOTICIAS mas destacadas-->
+      <section id="noticias">
+        <div class="noticias">
+          <div class="noticias__titulo">
+            <h4>Las NOTICIAS mas destacadas</h4>
+          </div>
+
+          <div class="noticias__cinemusica" id="cine">
+            <!--cine-->
+            <div class="noticias__cine">
+              <div class="noticias__img">
+                <div class="noticias__img__fila1">
+                  <a href="#" target="_blank"
+                    ><img src="./images/images.png" alt="img CullturaGeek"
+                  /></a>
+
+                  <a href="#" target="_blank"
+                    ><img src="./images/images.png" alt="img CullturaGeek"
+                  /></a>
+                </div>
+
+                <div class="noticias__img__fila2">
+                  <a href="#" target="_blank"
+                    ><img src="./images/images.png" alt="img CullturaGeek"
+                  /></a>
+
+                  <a href="#" target="_blank"
+                    ><img src="./images/images.png" alt="img CullturaGeek"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero_contenedor">
-          <a class="hero_contenedor_img" href="./pages/avatar-nota.html"><img src="./images/avatar/avatar1.jpg"
-              alt="img CullturaGeek" /></a>
-          <div class="hero__texto">
+      </section>
+
+      <!--top 10 RECOMENDACIONES PELICULAS-->
+      <section id="recompelis">
+        <div class="recompelis__titulo">
+          <h6>TOP 10 recomendaciones de PELICULAS semanales</h6>
+        </div>
+
+        <div class="recom__slider">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./images/images.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--CURIOSIDADES-->
+      <section id="curiosidades">
+        <div class="curiosidades">
+          <div class="curiosidades__titulo">
+            <h6>Curiosidades del cine y mas!</h6>
+          </div>
+
+          <div class="curiosidades__img">
+            <div>
+              <a href="#" target="_blank"
+                ><img src="./images/images.png" alt="img CullturaGeek"
+              /></a>
+            </div>
+
+            <div>
+              <a href="#" target="_blank"
+                ><img src="./images/images.png" alt="img CullturaGeek"
+              /></a>
+            </div>
+
+            <div>
+              <a href="#" target="_blank"
+                ><img src="./images/images.png" alt="img CullturaGeek"
+              /></a>
+            </div>
+
+            <div>
+              <a href="#" target="_blank"
+                ><img src="./images/images.png" alt="img CullturaGeek"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer>
+      <div class="container__footer">
+        <div class="box__footer">
+          <hr />
+          <div class="logo">
+            <img src="./images/Screenshot_1.png" height="200px" alt="" />
+          </div>
+          <div class="terms">
+            <h6>Nosotros</h6>
             <p>
-              Todo lo que necesitas saber sobre AVATAR, trama, horario, curiosidades y mas!
+              Somos dos amigos unidos por el cine. Apoyamos la industrias desde
+              el respeto y la mayor admiracion posible, nos gusta informarnos y
+              aun mas nos gusta transmitir y contar lo que vemos, El cine es el
+              entretenimiento que mas impacto en mi vida y la vision que me
+              brindo es algo que quiero compartir con todas las personas
+              posibles. No soy un critico profesional, simplemente soy un
+              aficionado que busca compartir su opinion con la comunidad que
+              tanto amo.
             </p>
           </div>
-
-        </div>
-        <div class="hero_img_text_mobile">
-          <p>
-            Todo lo que necesitas saber sobre AVATAR, trama, horario, curiosidades y mas!
-          </p>
         </div>
 
-      </div>
-    </section>
+        <div class="box__footer">
+          <hr />
+          <h2>Redes Sociales</h2>
 
-    <!--Las NOTICIAS mas destacadas-->
-    <section id="noticias">
-      <div class="noticias">
-        <div class="noticias__titulo">
-          <h4>Las NOTICIAS mas destacadas</h4>
+          <div class="ig__culturageek">
+            <a href="https://www.instagram.com/cullturageek" target="_blank">
+              <box-icon
+                size="lg"
+                name="instagram"
+                type="logo"
+                color="#ffffff"
+              ></box-icon>
+            </a>
+
+            <a href="https://www.instagram.com/cullturageek" target="_blank">
+              Instagram
+            </a>
+          </div>
+
+          <div class="ig__culturageek">
+            <a href="https://www.instagram.com/cullturageek" target="_blank">
+              <box-icon
+                size="lg"
+                name="tiktok"
+                type="logo"
+                color="#ffffff"
+              ></box-icon>
+            </a>
+
+            <a href="https://www.tiktok.com/@ezeesosaa11" target="_blank">
+              TikTok
+            </a>
+          </div>
+
+          <div class="ig__culturageek">
+            <a
+              href="https://api.whatsapp.com/send?phone=5491162132903"
+              target="_blank"
+            >
+              <box-icon
+                size="lg"
+                name="whatsapp"
+                type="logo"
+                color="#ffffff"
+              ></box-icon>
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=5491162132903"
+              target="_blank"
+            >
+              Whatsapp</a
+            >
+          </div>
+
+          <div class="ig__culturageek">
+            <a href="mailto:ezeesosaa5@gmail.com" target="_blank">
+              <box-icon
+                size="lg"
+                name="gmail"
+                type="logo"
+                color="#ffffff"
+              ></box-icon>
+            </a>
+
+            <a href="mailto:ezeesosaa5@gmail.com" target="_blank"
+              >Mail Contacto</a
+            >
+          </div>
         </div>
 
-        <div class="noticias__cinemusica" id="cine">
-          <!--cine-->
-          <div class="noticias__cine">
-
-            <div class="noticias__img">
-
-              <div class="noticias__img__fila1">
-
-                <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-
-                <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-
-              </div>
-
-              <div class="noticias__img__fila2">
-
-                <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-
-                <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!--top 10 RECOMENDACIONES PELICULAS-->
-    <section id="recompelis">
-
-      <div class="recompelis__titulo">
-        <h6>TOP 10 recomendaciones de PELICULAS semanales</h6>
-      </div>
-
-      <div class="recom__slider">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img src="./images/images.png" alt="" /></a>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-    </section>
-
-
-
-    <!--CURIOSIDADES-->
-    <section id="curiosidades">
-      <div class="curiosidades">
-        <div class="curiosidades__titulo">
-          <h6>Curiosidades del cine, la musica y mas!</h6>
-        </div>
-
-        <div class="curiosidades__img">
-          <div>
-            <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-          </div>
-
-          <div>
-            <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-          </div>
-
-          <div>
-            <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-          </div>
-
-          <div>
-            <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-          </div>
-
-          <div>
-            <a href="#" target="_blank"><img src="./images/images.png" alt="img CullturaGeek" /></a>
-          </div>
+        <div class="box__footer">
+          <hr />
+          <h2>Newsletter</h2>
+          <p>Suscribete a nuestro newsletter</p>
+          <form action="#">
+            <input
+              type="email"
+              class="campo"
+              placeholder="correo electrónico"
+              required
+            />
+            <input type="submit" value="Enviar" class="btn-sub" />
+          </form>
+          <!-- </section> -->
         </div>
       </div>
-    </section>
-  </main>
 
-  <!--FOOTER-->
+      <div class="footer-menu footer__links">
+        <ul class="f-menu">
+          <li class="footer__ig footer__redes__hover">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="footer__ig footer__redes__hover">
+            <a href="#noticias">Novedades</a>
+          </li>
+          <li class="footer__ig footer__redes__hover">
+            <a href="#recompelis">Top semanal</a>
+          </li>
+          <li class="footer__ig footer__redes__hover">
+            <a href="#curiosidades">Curiosidades</a>
+          </li>
+        </ul>
+      </div>
 
-  <footer>
-    <div class="container__footer">
-
-
-
-      <div class="box__footer">
+      <div class="box__copyright">
         <hr />
-        <div class="logo">
-          <img src="./images/Screenshot_1.png" height="200px" alt="" />
-        </div>
-        <div class="terms">
-          <h6>Nosotros</h6>
-          <p>
-            Somos dos amigos unidos por el cine. Apoyamos la industrias desde el respeto y la mayor admiracion posible,
-            nos gusta informarnos y aun mas nos gusta transmitir y contar lo que vemos El cine es el entretenimiento que
-            mas impacto en mi vida y la vision que me brindo es algo que quiero compartir con todas las personas
-            posibles.
-            No soy un critico profesional, simplemente soy un aficionado que busca compartir su opinion con la comunidad
-            que tanto amo.
-          </p>
-        </div>
+        <p>Todos los derechos reservados © 2022 <b>CullturaGeek</b></p>
       </div>
+    </footer>
 
-      <div class="box__footer">
-        <hr>
-        <h2>Redes Sociales</h2>
+    <button class="btn-scrolltop" id="btn_scrolltop">
+      <i class="bx bx-up-arrow-circle bx-lg"></i>
+    </button>
+    <script>
+      const btn_scrolltop = document.getElementById("btn_scrolltop");
+      btn_scrolltop.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      });
 
-        <div class="ig__culturageek">
-          <a href="https://www.instagram.com/cullturageek" target="_blank">
-            <box-icon size="lg" name="instagram" type="logo" color="#ffffff"></box-icon>
-          </a>
+      window.onscroll = () => {
+        add_btn_scrolltop();
+      };
 
-          <a href="https://www.instagram.com/cullturageek" target="_blank">
-            Instagram
-          </a>
+      const add_btn_scrolltop = () => {
+        if (window.scrollY < 300) {
+          btn_scrolltop.classList.remove("btn-scrolltop-on");
+        } else {
+          btn_scrolltop.classList.add("btn-scrolltop-on");
+        }
+      };
+    </script>
 
-        </div>
+    <!--progress bar-->
+    <script src="./js/ScrollProgressBar.js"></script>
+    <script src="./js/ScrollProgressBar.min.js"></script>
+  </body>
 
-        <div class="ig__culturageek">
-          <a href="https://www.instagram.com/cullturageek" target="_blank">
-            <box-icon size="lg" name="tiktok" type="logo" color="#ffffff"></box-icon>
-          </a>
+  <!--bootstrap-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
 
-          <a href="https://www.tiktok.com/@ezeesosaa11" target="_blank">
-            TikTok
-          </a>
+  <!--swiper script-->
 
-        </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-        <div class="ig__culturageek">
-
-          <a href="https://api.whatsapp.com/send?phone=5491162132903" target="_blank">
-            <box-icon size="lg" name="whatsapp" type="logo" color="#ffffff"></box-icon>
-
-          </a>
-
-          <a href="https://api.whatsapp.com/send?phone=5491162132903" target="_blank"> Whatsapp</a>
-
-        </div>
-
-        <div class="ig__culturageek">
-
-          <a href="mailto:ezeesosaa5@gmail.com" target="_blank">
-            <box-icon size="lg" name="gmail" type="logo" color="#ffffff"></box-icon>
-          </a>
-
-          <a href="mailto:ezeesosaa5@gmail.com" target="_blank">Mail Contacto</a>
-
-        </div>
-
-      </div>
-
-      <div class="box__footer">
-        <hr>
-        <h2>Newsletter</h2>
-        <p>Suscribete a nuestro newsletter</p>
-        <form action="#">
-          <input type="email" class="campo" placeholder="correo electrónico" required>
-          <input type="submit" value="Enviar" class="btn-sub">
-
-        </form>
-        </section>
-
-
-      </div>
-    </div>
-
-    <div class="footer-menu footer__links">
-      <ul class="f-menu">
-        <li class="footer__ig footer__redes__hover"><a href="index.html">Inicio</a></li>
-        <li class="footer__ig footer__redes__hover"><a href="#">Novedades</a></li>
-        <li class="footer__ig footer__redes__hover"><a href="#">Top semanal</a></li>
-        <li class="footer__ig footer__redes__hover"><a href="#">Curiosidades</a></li>
-      </ul>
-    </div>
-
-    <div class="box__copyright">
-      <hr />
-      <p>Todos los derechos reservados © 2022 <b>CullturaGeek</b></p>
-    </div>
-  </footer>
-
-
-  <button class="btn-scrolltop" id="btn_scrolltop">
-    <i class='bx bx-up-arrow-circle bx-lg'></i>
-  </button>
+  <!-- Initialize Swiper -->
   <script>
-    const btn_scrolltop = document.getElementById("btn_scrolltop")
-    btn_scrolltop.addEventListener('click', () => {
-      window.scrollTo(0, 0)
-    })
-
-    window.onscroll = () => {
-      add_btn_scrolltop()
-    }
-
-    const add_btn_scrolltop = () => {
-      if (window.scrollY < 300) {
-        btn_scrolltop.classList.remove("btn-scrolltop-on")
-      } else {
-        btn_scrolltop.classList.add("btn-scrolltop-on")
-      }
-    }
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // when window width is >= 991px/tablet
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1500: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
   </script>
 
-  <!--progress bar-->
-  <script src="./js/ScrollProgressBar.js"></script>
-  <script src="./js/ScrollProgressBar.min.js"></script>
-</body>
-
-
-<!--bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-<!--swiper script-->
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      // when window width is >= 991px/tablet
-      991: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      1500: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-    }
-  });
-
-</script>
-
-<!--box icons-->
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+  <!--box icons-->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </html>
